@@ -1,0 +1,38 @@
+<div ng-controller="summaryCtrl" class="tabsdemoStaticTabs" >
+  <div class="row">
+    <div class="col-6">
+      <md-toolbar class="md-theme-light" md-colors="{background: 'deep-purple'}">
+        <h2 class="md-toolbar-tools">
+          <span>Add Summary</span>
+        </h2>
+      </md-toolbar>
+      <md-input-container class="md-block">
+        <label>Write your nice little summary</label>
+        <md-icon><i class="material-icons">&#xE896;</i></md-icon>
+        <textarea ng-model="biography" md-maxlength="450" rows="5" md-autofocus></textarea>
+      </md-input-container>
+      <md-button class="md-raised md-primary" ng-click="saveSummery()" md-colors="{background: 'green'}">Save</md-button>
+      <md-button class="md-raised md-primary" href="#/basicinfo" md-colors="{background: 'deep-purple'}">Next ➔</md-button>
+    </div>
+    <div class="col-6">
+      <md-toolbar class="md-theme-light" md-colors="{background: 'deep-purple'}">
+        <h2 class="md-toolbar-tools">
+          <span>Get Inspiration</span>
+        </h2>
+      </md-toolbar>
+      <br>
+      <h2 class="head-job">SELECT JOB PROFILE</h2>
+      <md-select ng-model="selectedDeveloperType" ng-change="displaySummary()">
+        <md-option value="front-end">Front-end Developer</md-option>
+        <md-option value="back-end">Back-end Developer</md-option>
+        <md-option value="full-stack">Full-stack Developer</md-option>
+      </md-select>
+      <div ng-show="displayFrontEndSummary || displayBackEndSummary || displayFullStackSummary">
+        <md-select ng-model="selectedSummary" placeholder="Select a summary" class="summary-select">
+          <md-option ng-repeat="summary in summaries" value="{{summary}}" class="summary-select">{{summary}}</md-option>
+        </md-select>
+      </div>
+      <md-button class="md-raised md-primary" ng-click="populateSummary()" md-colors="{background: 'green'}">Populate Summary</md-button>
+    </div>
+  </div>
+</div>
