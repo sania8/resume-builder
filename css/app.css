@@ -79,8 +79,16 @@
   height: 100%;
 }
 
-.alignCenter{
+.alignCenter{ 
   text-align: center;
+}
+.team{
+  color: #e91e63;
+  font-size: 1.5rem;
+  font-weight : bold;
+  text-align: center;
+
+
 }
 
 
@@ -123,7 +131,7 @@
   font-size: 16px;
   font-weight: bold;
   color: #5a5a5a;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .startBtn{
@@ -212,9 +220,9 @@ footer a{
   text-transform: capitalize;
 }
 
-.fabSpeedDialdemoBasicUsage .md-fab:hover, .fabSpeedDialdemoBasicUsage .md-fab.md-focused {
-  background-color: #000 !important;
-}
+/*fabSpeedDialdemoBasicUsage .md-fab:hover, .fabSpeedDialdemoBasicUsage .md-fab.md-focused {
+  <h1>menu</h1> !important;
+}*/
 
 .fabSpeedDialdemoBasicUsage p.note {
   font-size: 1.2rem;

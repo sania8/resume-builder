@@ -7,12 +7,18 @@
         </h2>
       </md-toolbar>
       <md-input-container class="md-block">
+        
+        <!-- <img src="images/list.png" style="width:18px; height:18px;" class="material-icons"> -->
+        <br>
+        <br>
+        <br>
         <label>Write your nice little summary</label>
-        <md-icon><i class="material-icons">&#xE896;</i></md-icon>
+        
         <textarea ng-model="biography" md-maxlength="450" rows="5" md-autofocus></textarea>
+       
       </md-input-container>
-      <md-button class="md-raised md-primary" ng-click="saveSummery()" md-colors="{background: 'green'}">Save</md-button>
-      <md-button class="md-raised md-primary" href="#/basicinfo" md-colors="{background: 'deep-purple'}">Next ➔</md-button>
+      <!-- <md-button class="md-raised md-primary" md-colors="{background: 'green'}">Save</md-button> -->
+      <md-button class="md-raised md-primary" ng-click="saveSummery()"  href="#/basicinfo" md-colors="{background: 'green'}">Next ➔</md-button>
     </div>
     <div class="col-6">
       <md-toolbar class="md-theme-light" md-colors="{background: 'deep-purple'}">
